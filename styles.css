@@ -1,0 +1,74 @@
+/* Definição do estilo para o corpo da página */
+body {
+  /* Cor de fundo preta (#000) para o corpo da página */
+  background-color: #000;
+}
+
+/* Estilo da barra lateral (sidebar) */
+.sidebar {
+  /* Fixa a posição da barra lateral à esquerda da tela */
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  /* Adiciona um espaçamento interno de 12 pixels à barra lateral */
+  padding: 12px;
+  /* Largura da barra lateral definida como 300 pixels */
+  width: 300px;
+}
+
+/* Estilo para a navegação dentro da barra lateral */
+.sidebar__navigation {
+  /* Cor de fundo escura (#121212) para a navegação */
+  background-color: #121212;
+  /* Borda arredondada com raio de 8 pixels */
+  border-radius: 8px;
+  /* Adiciona espaçamento interno para a navegação */
+  padding: 16px 0 0 16px;
+}
+
+/* Estilo para a seção do logotipo dentro da navegação */
+.sidebar__navigation .logo {
+  /* Cor de fundo escura (#121212) para a seção do logotipo */
+  background: #121212;
+  /* Exibe os elementos em linha (horizontal) dentro da seção do logotipo */
+  display: flex;
+  /* Borda arredondada com raio de 8 pixels */
+  border-radius: 8px;
+  /* Adiciona espaçamento interno para a seção do logotipo */
+  padding: 16px 0 0 16px; 
+}
+
+/* Estilo para a imagem dentro da seção do logotipo */
+.logo img {
+  /* Largura fixa da imagem como 80 pixels */
+  width: 80px;
+}
+
+/* Estilo para a lista não ordenada (ul) dentro da navegação */
+.sidebar nav ul {
+  /* Adiciona margem superior de 20 pixels à lista */
+  margin-top: 20px;
+  /* Adiciona espaçamento interno à lista */
+  padding: 0 20px 10px 20px;
+}
+
+/* Estilo para cada item de lista (li) dentro da barra lateral */
+.sidebar ul li {
+  /* Adiciona espaçamento interno ao item de lista */
+  padding: 10px 0px;
+}
+
+/* Estilo para os links (a) dentro dos itens de lista da navegação */
+.sidebar nav ul li a{
+  /* Cor do texto para os links (#b3b3b3) */
+  color: #b3b3b3;
+  /* Remove a decoração de sublinhado dos links */
+  text-decoration: none;
+  /* Peso da fonte definido como 600 (semi-negrito) */
+  font-weight: 600;
+  /* Tamanho da fonte definido como 14 pixels */
+  font-size: 14px;
+  /* Família da fonte definida como "DM SANS" ou, se não disponível, uma fonte sans-serif genérica */
+  font-family: "DM SANS", sans-serif;
+}
