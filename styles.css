@@ -60,7 +60,7 @@ body {
 }
 
 /* Estilo para os links (a) dentro dos itens de lista da navegação */
-.sidebar nav ul li a{
+.sidebar nav ul li a {
   /* Cor do texto para os links (#b3b3b3) */
   color: #b3b3b3;
   /* Remove a decoração de sublinhado dos links */
@@ -71,4 +71,141 @@ body {
   font-size: 14px;
   /* Família da fonte definida como "DM SANS" ou, se não disponível, uma fonte sans-serif genérica */
   font-family: "DM SANS", sans-serif;
+}
+
+/* Estilo para a seção da biblioteca */
+.library {
+  background-color: #121212;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  padding: 4px 8px;
+  color: #b3b3b3;
+  font-weight: 600;
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+/* Estilo para o conteúdo da biblioteca */
+.library .library__content {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Estilo para o botão da biblioteca */
+.library .library__button {
+  display: flex;
+  margin-right: 10px;
+  color: #b3b3b3;
+  background-color: transparent;
+  border: 0px;
+  font-size: 14px;
+  font-weight: 700;
+  font-family: "DM SANS", sans-serif;
+  text-align: center;
+  text-decoration: none;
+  text-transform: none;
+  padding: 20px 10px;
+}
+
+/* Ajuste de nome de classe corrigido para o ícone no botão da biblioteca */
+.library .library__button .fa {
+  font-size: 20px;
+  margin-right: 10px;
+  font-weight: 300;
+  padding-right: 8px; 
+}
+
+/* Ajuste de nome de classe corrigido para o ícone de adição na biblioteca */
+.library .library__content .fa-plus {
+  margin: 24px 10px;
+}
+
+/* Estilo para a seção de playlists */
+.section-playlist {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 20px;
+  background-color: #242424;
+  color: #b3b3b3;
+  font-weight: 600;
+  font-size: 14px;
+  margin: 8px 0px;
+  padding: 16px 20px;
+  border-radius: 10px;
+}
+
+/* Estilo para o conteúdo da seção de playlists */
+.section-playlist .section-playlist__content {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Estilo para o texto na seção de playlists */
+.section-playlist__content .text {
+  padding-bottom: 14px;
+  color: #fff;
+  font-family: "DM SANS", sans-serif;
+}
+
+/* Estilo para o título na seção de playlists */
+.section-playlist__content .title {
+  font-weight: 700;
+}
+
+/* Estilo para o subtítulo na seção de playlists */
+.section-playlist__content .subtitle {
+  font-weight: 500;
+  font-size: 12px;
+}
+
+/* Estilo para o botão na seção de playlists */
+.section-playlist__content .section-playlist__button {
+  display: flex;
+  justify-content: center;
+  background-color: #fff;
+  color: #000;
+  border-radius: 20px; /* Adiciona bordas arredondadas */
+  font-size: 12px;
+  font-weight: 700;
+  font-family: "DM SANS", sans-serif;
+  text-decoration: none;
+  text-transform: none;
+  padding: 10px;
+  margin-top: 12px;
+  width: 113px;  
+}
+
+/* Estilo para a seção de cookies na barra lateral */
+.sidebar .cookies {
+  margin: 25px 20px;
+}
+
+/* Estilo para o link na seção de cookies */
+.sidebar .cookies a {
+  color: #b3b3b3;
+  font-weight: 500;
+  font-size: 10px;
+  text-decoration: none;
+}
+
+/* Estilo para o link hover na seção de cookies */
+.sidebar .cookies a:hover {
+  text-decoration: underline;
+}
+
+/* Estilo para a seção de idiomas na barra lateral */
+.languages .languages__button {
+  background-color: transparent;
+  border: 1px solid #878787;
+  color: #fff;
+  cursor: pointer;
+  font-weight: bold;
+  align-items: center;
+  width: 170px;
+  margin: 8px;
+  padding: 8px;
+  border-radius: 20px;
 }
