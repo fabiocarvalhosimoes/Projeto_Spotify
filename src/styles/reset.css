@@ -66,3 +66,8 @@ table {
 	/* Remove o espaçamento entre as células da tabela */
 	border-spacing: 0;
 }
+
+button {
+  border: none;
+  cursor: pointer;
+}

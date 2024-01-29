@@ -1,9 +1,44 @@
-/* Definindo variáveis globais no elemento raiz (:root) */
-
+/* Definição de variáveis de cor, espaçamento e fonte no nível global (root) */
 :root {
-  /* Definindo uma variável de fonte chamada --font-dm-sans */
-  --font-dm-sans: "DM Sans", sans-serif;
+  /* Cores de texto */
+  --text-base-dark: #000;       /* Cor de texto base escura */
+  --text-base-light: #fff;      /* Cor de texto base clara */
+  --text-sub: #a7a7a7;          /* Cor de texto para subtítulos */
 
-  --bg-icon: #131313;
-  --bg-arrow-color: rgba(0,0,07);
+  /* Cores de fundo e espaçamento */
+  --bg-icon: #131313;           /* Cor de fundo para ícones */
+  --bg-top-bar: #61616142;      /* Cor de fundo para a barra superior com transparência */
+  --grid-gap: 24px;             /* Espaçamento entre os elementos em um layout de grade */
+  --column-count: 5;            /* Número de colunas em um layout de grade */
+
+  /* Cores para cartões */
+  --card1: rgb(0, 100, 80);      /* Cor para o cartão 1 em formato RGB */
+  --card2: rgb(132, 0, 231);     /* Cor para o cartão 2 em formato RGB */
+  --card3: rgb(30, 50, 100);     /* Cor para o cartão 3 em formato RGB */
+  --card4: rgb(140, 25, 50);     /* Cor para o cartão 4 em formato RGB */
+  --card5: rgb(232, 17, 91);     /* Cor para o cartão 5 em formato RGB */
+  --card6: rgb(83, 122, 161);    /* Cor para o cartão 6 em formato RGB */
+  --card7: rgb(142, 102, 172);   /* Cor para o cartão 7 em formato RGB */
+  --card8: rgb(20, 138, 8);      /* Cor para o cartão 8 em formato RGB */
+  --card9: rgb(30, 50, 100);     /* Cor para o cartão 9 em formato RGB */
+  --card10: rgb(233, 20, 41);    /* Cor para o cartão 10 em formato RGB */
+  --card11: rgb(80, 55, 80);     /* Cor para o cartão 11 em formato RGB */
+  --card12: rgb(216, 64, 0);     /* Cor para o cartão 12 em formato RGB */
+  --card13: rgb(186, 93, 7);     /* Cor para o cartão 13 em formato RGB */
+  --card14: rgb(0, 30, 80);      /* Cor para o cartão 14 em formato RGB */
+  --card15: rgb(60, 30, 80);     /* Cor para o cartão 15 em formato RGB */
+
+  /* Fontes */
+  --font-dm-sans: "DM Sans", sans-serif;  /* Fonte principal para ser usada */
+}
+
+/* MEDIA QUERYS para diferentes tamanhos de tela */
+@media screen and (max-width: 767px) {
+  /* Estilos específicos para telas com largura máxima de 767 pixels */
+  /* Adicione os estilos conforme necessário */
+}
+
+@media screen and (min-width: 768px) and (max-width: 1274px) {
+  /* Estilos específicos para telas com largura mínima de 768 pixels e máxima de 1274 pixels */
+  /* Adicione os estilos conforme necessário */
 }

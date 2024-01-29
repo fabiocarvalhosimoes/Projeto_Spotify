@@ -1,0 +1,176 @@
+/* Estilos para o cabeçalho (HEADER) */
+.main-container {
+  max-width: 80rem;        /* Largura máxima do contêiner principal */
+  height: 100rem;          /* Altura do contêiner principal */
+  margin-left: 20rem;      /* Margem à esquerda do contêiner principal (320px em rem) */
+  margin-right: 3.5rem;     /* Margem à direita do contêiner principal (56px em rem) */
+}
+
+.header__navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.625rem;        /* Preenchimento interno (10px em rem) */
+  margin: 1.25rem;          /* Margem externa (20px em rem) */
+  border-radius: 0.5rem;    /* Raio de borda (8px em rem) */
+  background-color: #121212; /* Cor de fundo da barra de navegação */
+}
+
+.header__navigation .navigation {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.header__navigation .navigation .arrow-left {
+  margin-right: 0.9375rem;  /* Margem à direita (15px em rem) para a seta esquerda */
+}
+
+.arrow-left,
+.arrow-right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2rem;               /* Largura do botão de seta (16px em rem) */
+  height: 2rem;              /* Altura do botão de seta (16px em rem) */
+  background: var(--bg-icon); /* Cor de fundo do ícone definida nas variáveis */
+  background-color: rgba(0, 0, 0, 0.7); /* Cor de fundo com transparência */
+  border-radius: 50%;        /* Raio de borda (50% para tornar o botão circular) */
+  border: none;              /* Sem borda no botão */
+  cursor: pointer;           /* Cursor indicando que é clicável */
+}
+
+.header__login {
+  display: flex;
+  align-items: center;
+}
+
+.header__search {
+  display: flex;
+  align-items: center;
+  width: 22.75rem;           /* Largura do campo de pesquisa (364px em rem) */
+  height: 3rem;              /* Altura do campo de pesquisa (48px em rem) */
+  margin-left: 0.5rem;       /* Margem à esquerda do campo de pesquisa (8px em rem) */
+  border: transparent;
+  background-color: #242424; /* Cor de fundo do campo de pesquisa */
+  border-radius: 31.25rem;   /* Raio de borda (500px em rem) para tornar o campo circular */
+  border: 0.0625rem solid transparent; /* Borda com transparência (1px em rem) */
+}
+
+.header__search img {
+  width: 1rem;               /* Largura da imagem do ícone de pesquisa (16px em rem) */
+  height: 1rem;              /* Altura da imagem do ícone de pesquisa (16px em rem) */
+  margin-left: 1.25rem;      /* Margem à esquerda da imagem do ícone de pesquisa (10px em rem) */
+}
+
+.header__search input {
+  background: transparent;   /* Fundo transparente para o campo de entrada de texto */
+  border: none;              /* Sem borda no campo de entrada de texto */
+  padding: 0 6.25rem 0 0.75rem; /* Preenchimento interno (0.75rem à direita para espaçamento) */
+  color: #fff;               /* Cor do texto: branco */
+  text-overflow: ellipsis;   /* Efeito de elipse para texto que transborda */
+  outline: none;             /* Remove a borda de foco ao clicar */
+}
+
+.header__login .subscribe {
+  color: var(--text-sub);    /* Cor do texto de inscrição */
+  font-size: 1rem;           /* Tamanho da fonte (16px em rem) */
+  font-weight: 700;          /* Peso da fonte: negrito */
+  background-color: transparent; /* Fundo transparente para o botão de inscrição */
+  margin-right: 2rem;        /* Margem à direita (32px em rem) */
+}
+
+.header__login .login {
+  width: 6.25rem;            /* Largura do botão de login (100px em rem) */
+  height: 3rem;              /* Altura do botão de login (48px em rem) */
+  color: var(--text-base-dark); /* Cor do texto do botão de login */
+  font-size: 1rem;           /* Tamanho da fonte (16px em rem) */
+  font-weight: 700;          /* Peso da fonte: negrito */
+  border-radius: 2.5rem;     /* Raio de borda (40px em rem) para tornar o botão arredondado */
+}
+
+/* Efeito de hover */
+.header__search:hover {
+  border: 0.0625rem solid #fff; /* Borda com cor branca (1px em rem) ao passar o mouse */
+}
+
+.header__login .subscribe:hover,
+.header__login .login:hover {
+  transform: scale(1.04);    /* Efeito de escala ao passar o mouse nos botões de inscrição e login */
+}
+/* Fim do cabeçalho (HEADER) */
+
+/* Estilos para a seção de Playlist */
+.playlist-container {
+  height: 72vh;               /* Altura da seção da playlist (72% da altura da tela) */
+  padding-top: 1rem;          /* Preenchimento superior (16px em rem) */
+  margin: 1.25rem;             /* Margem externa (20px em rem) */
+  border-radius: 0.625rem;    /* Raio de borda (10px em rem) */
+  background-color: #121212;  /* Cor de fundo da seção da playlist */
+}
+
+.playlist {
+  margin: 3rem;               /* Margem externa (24px em rem) para os itens da playlist */
+}
+
+.playlist #greeting {
+  color: var(--text-base-light); /* Cor do texto de saudação */
+  font-size: 2rem;           /* Tamanho da fonte (32px em rem) */
+  font-weight: 700;          /* Peso da fonte: negrito */
+  margin-bottom: 3rem;       /* Margem inferior (48px em rem) para o texto de saudação */
+}
+
+.playlist .session {
+  color: var(--text-base-light); /* Cor do texto da sessão */
+  font-size: 1.5rem;         /* Tamanho da fonte (24px em rem) */
+  font-weight: 700;          /* Peso da fonte: negrito */
+}
+
+/* Estilos para a barra de rolagem */
+.offer__scroll-container {
+  max-height: 52vh;          /* Altura máxima da área de rolagem (52% da altura da tela) */
+  margin: 3rem;              /* Margem externa (24px em rem) */
+  overflow-y: auto;          /* Adiciona uma barra de rolagem vertical quando necessário */
+}
+
+.offer__scroll-container::-webkit-scrollbar {
+  width: 0.0625rem;          /* Largura da barra de rolagem (1px em rem) */
+}
+
+/* Estilos para o polegar (thumb) da barra de rolagem */
+.offer__scroll-container::-webkit-scrollbar-thumb {
+  background-color: transparent; /* Cor do polegar da barra de rolagem */
+}
+/* Fim da barra de rolagem */
+
+/* Estilos para os itens da lista de ofertas */
+.offer__list-item {
+  display: grid;              /* Define o modelo de layout do elemento como uma grade */
+  justify-items: center;      /* Alinha os itens da grade no centro */
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr; /* Configuração das colunas na grade */
+  gap: 1rem;                  /* Espaçamento entre os itens da grade */
+  margin-bottom: 1rem;        /* Margem inferior (16px em rem) para os itens da lista */
+}
+
+/* Estilos para os cards (cartões) */
+.cards {
+  position: relative;
+  width: 13.75rem;            /* Largura do card (220px em rem) */
+  height: 12.5rem;            /* Altura do card (200px em rem) */
+  overflow: hidden;           /* Oculta qualquer conteúdo que ultrapasse as dimensões do card */
+  border-radius: 0.5rem;      /* Raio de borda (8px em rem) */
+}
+
+.cards span {
+  padding: 1rem;              /* Preenchimento interno (16px em rem) para o texto no card */
+  position: absolute;
+  color: var(--text-base-light); /* Cor do texto no card */
+  font-size: 1.5rem;          /* Tamanho da fonte (24px em rem) */
+  font-weight: 700;           /* Peso da fonte: negrito */
+}
+
+/* Cores para os cards */
+.card1 {
+  background-color: rgb(0, 100, 80);
+}
+/* Restante do seu código permanece igual */
