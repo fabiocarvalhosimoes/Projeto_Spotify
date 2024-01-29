@@ -1,59 +1,53 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-  <!-- Configuração do tipo de documento HTML e idioma da página -->
-  <meta charset="UTF-8">
-  <!-- Definição da largura da tela e escala inicial para design responsivo -->
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="en">
 
-  <!-- Título da página web exibido na barra de título do navegador -->
+<head>
+  <!-- Configuração do documento HTML e meta tags -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Projeto Spotify</title>
 
-  <!-- Link para um arquivo CSS de reset, utilizado para garantir estilos consistentes em diferentes navegadores -->
-  <link rel="stylesheet" href="reset.css">
+  <!-- Ícone da página (favicon) -->
+  <link rel="shortcut icon" href="./src/assets/icons/favicon.png" type="image/x-icon" />
 
-  <!-- Link para seus estilos personalizados do projeto -->
-  <link rel="stylesheet" href="styles.css">
+  <!-- Links para os arquivos de estilo -->
+  <link rel="stylesheet" href="src/styles/reset.css" />
+  <link rel="stylesheet" href="src/styles/vars.css" />
+  <link rel="stylesheet" href="src/styles/main-content.css" />
+  <link rel="stylesheet" href="src/styles/sidebar-footer.css" />
+  <link rel="stylesheet" href="src/styles/media-query.css" /> <!-- Media queries devem ser chamados depois do CSS principal -->
 
-  <!-- Link para a biblioteca de ícones Font Awesome (versão sólida) -->
+  <!-- Links para a biblioteca de ícones Font Awesome -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/solid.css"
-        integrity="sha384-Tv5i09RULyHKMwX0E8wJUqSOaXlyu3SQxORObAI08iUwIalMmN5L6AvlPX2LMoSE" crossorigin="anonymous" />
-
-  <!-- Link para a biblioteca de ícones Font Awesome (versão regular) -->
+    integrity="sha384-Tv5i09RULyHKMwX0E8wJUqSOaXlyu3SQxORObAI08iUwIalMmN5L6AvlPX2LMoSE" crossorigin="anonymous" />
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/fontawesome.css"
-        integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7" crossorigin="anonymous" />
+    integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7" crossorigin="anonymous" />
 </head>
 
 <body>
-  <!-- Seção da barra lateral (sidebar) -->
+  <!-- Barra lateral -->
   <div class="sidebar">
-    <!-- Seção de navegação dentro da barra lateral -->
-    <nav class="sidebar__navigation"> 
-      <!-- Seção do logotipo dentro da barra de navegação -->
+    <!-- Navegação na barra lateral -->
+    <nav class="sidebar__navigation">
+      <!-- Logotipo -->
       <div class="logo">
         <a href="">
-          <!-- Imagem do logotipo do Spotify -->
-          <img src="./assets/icons/logo-spotify.png" alt="logo do spotify">
+          <img src="./src/assets/icons/logo-spotify.png" alt="Logo" />
         </a>
       </div>
-      <!-- Itens do menu dentro da barra lateral -->
+      <!-- Itens do menu -->
       <ul>
-        <!-- Link para a página inicial com ícone e texto -->
+        <!-- Link para a página inicial -->
         <li>
           <a href="">
-            <!-- Ícone de casa da Font Awesome -->
             <span class="fa fa-home"></span>
-            <!-- Texto "Início" -->
             <span>Início</span>
           </a>
         </li>
-
-        <!-- Link para a página de busca com ícone e texto -->
+        <!-- Link para a página de busca -->
         <li>
           <a href="">
-            <!-- Ícone de lupa da Font Awesome -->
             <span class="fa fa-search"></span>
-            <!-- Texto "Buscar" -->
             <span>Buscar</span>
           </a>
         </li>
@@ -66,10 +60,8 @@
       <div class="library__content">
         <!-- Botão da biblioteca -->
         <button class="library__button">
-          <!-- Ícone de livro da Font Awesome -->
-          <span class="fa fa-book"></span>
-          <!-- Texto "Sua Biblioteca" -->
-          <span>Sua Biblioteca</span>
+          <span class="fa fas fa-book"></span>
+          <span>Sua biblioteca</span>
         </button>
         <!-- Ícone de adição à biblioteca -->
         <span class="fa fa-plus"></span>
@@ -82,7 +74,7 @@
           <!-- Título da playlist -->
           <span class="text title">Crie sua primeira playlist</span>
           <!-- Subtítulo da playlist -->
-          <span class="text subtitle">É fácil, vamos te ajudar</span>
+          <span class="text subtitle">É fácil, vamos te ajudar.</span>
           <!-- Botão para criar playlist -->
           <button class="section-playlist__button">
             <span>Criar playlist</span>
@@ -97,15 +89,112 @@
 
       <!-- Seção de seleção de idiomas -->
       <div class="languages">
-        <!-- Botão para seleção de idioma -->
         <button class="languages__button">
-          <!-- Ícone de globo da Font Awesome -->
           <span class="fa fa-globe"></span>
-          <!-- Texto "Português do Brasil" -->
           <span>Português do Brasil</span>
         </button>
       </div>
     </div>
   </div>
+
+  <!-- Conteúdo principal -->
+  <main>
+    <div class="main-container">
+      <!-- Navegação no cabeçalho -->
+      <nav class="header__navigation">
+        <div class="navigation">
+          <!-- Botões de navegação -->
+          <button class="arrow-left">
+            <img src="./src/assets/icons/small-left.png" alt="" />
+          </button>
+          <button class="arrow-right">
+            <img src="./src/assets/icons/small-right.png" alt="" />
+          </button>
+
+          <!-- Barra de pesquisa -->
+          <div class="header__search">
+            <img src="./src/assets/icons/search.png" alt="" />
+            <input id="search-input" maxlength="800" autocorrect="off" autocapitalize="off" spellcheck="false"
+              placeholder="O que você quer ouvir?" value="" />
+          </div>
+        </div>
+
+        <!-- Login e Inscrição -->
+        <div class="header__login">
+          <button class="subscribe">Inscreva-se</button>
+          <button class="login">Entrar</button>
+        </div>
+      </nav>
+
+      <!-- Playlists -->
+      <div class="playlist-container">
+        <div id="result-playlists">
+          <div class="playlist">
+            <!-- Saudação (Bom dia/Boa tarde/Boa noite) -->
+            <h1 id="greeting"></h1>
+            <h2 class="session">Navegar por todas as seções</h2>
+          </div>
+
+          <!-- Lista de playlists -->
+          <div class="offer__scroll-container">
+            <div class="offer__list">
+              <section class="offer__list-item">
+                <!-- Cartão de playlist 1 -->
+                <a href="" class="cards">
+                  <div class="cards card1">
+                    <img src="./src/assets/playlist/1.jpeg" alt="" />
+                    <span>Boas festas</span>
+                  </div>
+                </a>
+                <!-- (Mais cartões de playlist semelhantes) -->
+              </section>
+            </div>
+          </div>
+        </div>
+
+        <!-- Resultados do artista (inicialmente ocultos) -->
+        <div id="result-artist" class="hidden">
+          <div class="grid-container">
+            <div class="artist-card" id="">
+              <!-- Cartão do artista -->
+              <div class="card-img">
+                <img id="artist-img" class="artist-img" />
+                <!-- Ícone de reprodução -->
+                <div class="play">
+                  <span class="fa fa-solid fa-play"></span>
+                </div>
+              </div>
+              <div class="card-text">
+                <!-- Nome do artista e categoria -->
+                <a title="Foo Fighters" class="vst" href=""></a>
+                <span class="artist-name" id="artist-name"></span>
+                <span class="artist-categorie">Artista</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Rodapé -->
+  <footer class="disclaimer-premium">
+    <div class="text">
+      <!-- Título e subtítulo do rodapé -->
+      <p class="disclaimer-premium__title">Testar o Premium de graça</p>
+      <p class="disclaimer-premium__subtitle">
+        Inscreva-se para curtir música ilimitada e podcasts só com alguns anúncios. Não precisa de cartão de crédito.
+      </p>
+    </div>
+    <!-- Botão de inscrição gratuita -->
+    <div class="button">
+      <button type="button">Inscreva-se grátis</button>
+    </div>
+  </footer>
+
+  <!-- Scripts JavaScript -->
+  <script src="script.js" type="text/javascript"></script>
+  <script src="search.js" type="text/javascript"></script>
 </body>
+
 </html>

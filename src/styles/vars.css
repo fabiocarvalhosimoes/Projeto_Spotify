@@ -1,0 +1,9 @@
+/* Definindo variáveis globais no elemento raiz (:root) */
+
+:root {
+  /* Definindo uma variável de fonte chamada --font-dm-sans */
+  --font-dm-sans: "DM Sans", sans-serif;
+
+  --bg-icon: #131313;
+  --bg-arrow-color: rgba(0,0,07);
+}

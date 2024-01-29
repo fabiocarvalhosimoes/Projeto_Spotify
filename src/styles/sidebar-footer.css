@@ -2,6 +2,7 @@
 body {
   /* Cor de fundo preta (#000) para o corpo da página */
   background-color: #000;
+  font-family: var(--font-dm-sans);
 }
 
 /* Estilo da barra lateral (sidebar) */
@@ -69,8 +70,6 @@ body {
   font-weight: 600;
   /* Tamanho da fonte definido como 14 pixels */
   font-size: 14px;
-  /* Família da fonte definida como "DM SANS" ou, se não disponível, uma fonte sans-serif genérica */
-  font-family: "DM SANS", sans-serif;
 }
 
 /* Estilo para a seção da biblioteca */
@@ -102,7 +101,6 @@ body {
   border: 0px;
   font-size: 14px;
   font-weight: 700;
-  font-family: "DM SANS", sans-serif;
   text-align: center;
   text-decoration: none;
   text-transform: none;
@@ -147,7 +145,6 @@ body {
 .section-playlist__content .text {
   padding-bottom: 14px;
   color: #fff;
-  font-family: "DM SANS", sans-serif;
 }
 
 /* Estilo para o título na seção de playlists */
@@ -170,7 +167,6 @@ body {
   border-radius: 20px; /* Adiciona bordas arredondadas */
   font-size: 12px;
   font-weight: 700;
-  font-family: "DM SANS", sans-serif;
   text-decoration: none;
   text-transform: none;
   padding: 10px;
